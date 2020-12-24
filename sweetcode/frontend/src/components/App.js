@@ -8,20 +8,22 @@ class App extends Component {
       data: ''
   };
  
-    componentDidMount() {
-        fetch("/api")
-          .then(response => {
-          return response.json();
-        })
-        .then(data => this.setState({ data: JSON.stringify(data)}));
+  componentDidMount() {
+      fetch("/api")
+        .then(response => response.json())
+        .then(data => this.setState({ data: JSON.stringify(data)}))
   }
  
   render(){
- 
+      const users = this.state.data;
+     
       return (
-        this.state.data
-        
-) } } 
+        <div>
+          <div>{users}</div>
+        </div>
+  )
+ } 
+} 
 
 const wrapper = document.getElementById("app"); 
-wrapper ? ReactDOM.render(wrapper) : null;
+wrapper ? ReactDOM.render(<App />,wrapper) : null;
