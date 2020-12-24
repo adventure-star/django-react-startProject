@@ -1,0 +1,18 @@
+[{
+    "model": "sweetapp.post",
+    "pk": 4,
+      "fields": {
+        "author": "John Wick",
+        "title": "Better not Kill that Dog",
+        "content": "You know what comes next."
+    }
+  },
+  {
+    "model": "sweetapp.post",
+    "pk": 5,
+      "fields": {
+        "author": "Thanos",
+        "title": "Bringing Balance to the Universe",
+        "content": "I'll do it myself."
+    }
+  }]
