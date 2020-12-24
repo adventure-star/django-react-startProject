@@ -1,0 +1,22 @@
+{
+  "name": "django-react-mine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development ./sweetcode/frontend/src/components/index.js --output-path ./sweetcode/frontend/static/frontend",
+    "build": "webpack --mode production ./sweetcode/frontend/src/components/index.js --output-path ./sweetcode/frontend/static/frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
